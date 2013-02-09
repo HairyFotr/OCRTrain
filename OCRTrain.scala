@@ -231,12 +231,16 @@ object OCRTrain extends App {
     // Start with these params
     val preloads: List[Params] = (
       List(List()) ++ 
-      fromFile("preload").map(_.trim)
-        .filterNot(line => line.isEmpty || line(0) == '#')
-        .dropWhile(line => line != "---").drop(1)
-        .takeWhile(line => line != "---")
-        .distinct
-        .map(splitParams).toList)
+      try { 
+        fromFile("preload").map(_.trim)
+          .filterNot(line => line.isEmpty || line(0) == '#')
+          .dropWhile(line => line != "---").drop(1)
+          .takeWhile(line => line != "---")
+          .distinct
+          .map(splitParams).toList)
+      } catch {
+        case _: Exception => Nil
+      }
     
     object Preload extends Phase(name = "Preload", stepLimit = preloads.size, failLimit = -1) {
       override def precondition(params: Params): Boolean = step < preloads.size
