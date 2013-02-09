@@ -1,0 +1,338 @@
+-liquid-rescale 99%x99%
+-liquid-rescale 101%x101%
+-liquid-rescale 100%x95%
+-liquid-rescale 100%x90%
+-liquid-rescale 100%x85%
+-liquid-rescale 100%x80%
+-liquid-rescale 100%x75%
+-liquid-rescale 100%x70%
+-liquid-rescale 100%x60%
+-liquid-rescale 95%x100%
+-liquid-rescale 95%x95%
+-liquid-rescale 97%x97%
+-liquid-rescale 90%x90%
+-liquid-rescale 90%x80%
+-liquid-rescale 80%x80%
+-liquid-rescale 80%x90%
+-liquid-rescale 70%x70%
+-liquid-rescale 105%x105%
+-gravity center -extent 95%x95%
+-gravity center -extent 99%x99%
+-gravity center -extent 101%x101%
+-gravity center -extent 105%x105%
+-gravity center -extent 110%x110%
+-gravity center -extent 115%x115%
+-gravity center -extent 120%x120%
+-scale 75%x100%
+-scale 85%x100%
+-scale 90%x100%
+-scale 95%x100%
+-scale 99%x100%
+-scale 101%x100%
+-scale 105%x100%
+-scale 110%x100%
+-scale 115%x100%
+-scale 75%x75%
+-scale 85%x85%
+-scale 90%x90
+-scale 95%x95%
+-scale 99%x99%
+-scale 101%x101%
+-scale 105%x105%
+-scale 110%x110%
+-scale 115%x115%
+-wave 1x1
+-wave 2x2
+-wave 2x50
+-wave 2x75
+-wave 2x100
+-wave 3x150
+-wave 4x175
+-wave 5x200
+-wave -3x150
+-wave -4x175
+-wave -5x200
+-implode -0.1
+-implode +0.1
+-implode -0.2
+-implode +0.2
+-implode -0.3
+-implode +0.3
+-implode -0.5
+-implode +0.5
+-swirl 0.1
+-swirl 0.2
+-swirl 0.5
+-swirl 1.0
+-swirl 1.5
+-swirl 2.5
+-swirl 5.0
+-swirl 7.0
+-shear 1.0x0.0
+-shear 0.0x1.0
+-shear 1.0x1.0
+-shear 2.0x1.0
+-shear 1.0x2.0
+-shear 2.0x2.0
+-shear 3.0x3.0
+-shear 5.0x3.0
+-shear 3.0x5.0
+-morphology Dilate Diamond:1
+-morphology Smooth Diamond:1
+-morphology Erode Diamond:1
+-morphology OpenI Diamond:1
+-morphology Open Diamond:1
+-morphology Open Square:1
+-morphology Close Diamond:1
+-morphology Convolve Diamond:1
+-morphology Convolve Square:1
+-morphology Convolve Sobel:0
+-morphology Convolve Sobel:45
+-morphology Convolve Sobel:90
+-morphology Convolve Sobel:135
+-morphology Convolve Sobel:180
+-morphology Convolve Sobel:225
+-morphology Convolve Sobel:270
+-morphology Convolve Sobel:315
+-morphology Edge Diamond:1
+-morphology Edge Square:1
+-morphology EdgeIn Diamond:1
+-morphology EdgeOut Diamond:1
+-rotate +0.5
+-rotate -0.5
+-rotate +1
+-rotate -1
+-rotate +2
+-rotate -2
+-rotate +3
+-rotate -3
+-virtual-pixel Edge +distort SRT +0.1
+-virtual-pixel Edge +distort SRT -0.1
+-virtual-pixel Edge +distort SRT +0.2
+-virtual-pixel Edge +distort SRT -0.2
+-virtual-pixel Edge +distort SRT +0.35
+-virtual-pixel Edge +distort SRT -0.35
+-virtual-pixel Edge +distort SRT +0.5
+-virtual-pixel Edge +distort SRT -0.5
+-virtual-pixel Edge +distort SRT +0.75
+-virtual-pixel Edge +distort SRT -0.75
+-virtual-pixel Edge +distort SRT +1.0
+-virtual-pixel Edge +distort SRT -1.0
+-virtual-pixel Edge +distort SRT +2.0
+-virtual-pixel Edge +distort SRT -2.0
+-virtual-pixel Edge +distort SRT +3.0
+-virtual-pixel Edge +distort SRT -3.0
+-virtual-pixel Edge +distort SRT +4.0
+-virtual-pixel Edge +distort SRT -4.0
+-virtual-pixel Edge +distort SRT +5.0
+-virtual-pixel Edge +distort SRT -5.0
+-background gray100 -deskew 10%
+-background gray100 -deskew 25%
+-background gray100 -deskew 40%
+-background gray100 -deskew 55%
+-background gray100 -deskew 70%
+-background gray100 -deskew 90%
+-background gray0 -deskew 10%
+-background gray0 -deskew 40%
+-background gray0 -deskew 70%
+-background gray50 -deskew 10%
+-background gray50 -deskew 40%
+-background gray50 -deskew 70%
+-median 2x0
+-median 3x0
+-shade 0x25
+-shade 0x45
+-shade 45x25
+-shade 45x45
+-shade 90x25
+-shade 90x45
+-shade 90x90
+-edge 1
+-negate -edge 1 -negate
+-type Bilevel 
+-trim
+-fuzz 0% -trim
+-fuzz 5% -trim
+-fuzz 5% -trim -gravity center -extent 105%x105%
+-fuzz 5% -trim -gravity center -extent 115%x115%
+-fuzz 5% -trim -gravity center -extent 125%x125%
+-fuzz 5% -trim -gravity center -extent 150%x150%
+-fuzz 7% -trim
+-fuzz 10% -trim
+-fuzz 15% -trim
+-fuzz 20% -trim
+-fuzz 25% -trim
+-fuzz 30% -trim
+-fuzz 45% -trim
+-fuzz 55% -trim
+-sigmoidal-contrast 4x20%
+-sigmoidal-contrast 5x15%
+-sigmoidal-contrast 5x20%
+-sigmoidal-contrast 5x25%
+-sigmoidal-contrast 5x30%
+-sigmoidal-contrast 6x20%
+-sigmoidal-contrast 7x20%
+-sigmoidal-contrast 10x20%
+-sigmoidal-contrast 3x50%
+-sigmoidal-contrast 5x50%
+-sigmoidal-contrast 10x50%
+-sigmoidal-contrast 3x80%
+-sigmoidal-contrast 5x80%
+-sigmoidal-contrast 7x80%
+-sigmoidal-contrast 10x80%
+-sigmoidal-contrast 11x85%
+-sigmoidal-contrast 15x70%
+-sigmoidal-contrast 12x100%
+-solarize 5%
+-solarize 15%
+-solarize 25%
+-solarize 50%
+-solarize 85%
+-solarize 90%
+-solarize 95%
+-fill grey0 -fuzz 50% -floodfill 0x50% grey50
+-fill grey50 -fuzz 45% -floodfill 0x50% grey0
+-fill grey100 -fuzz 40% -floodfill 0x50% grey100
+-fill grey0 -fuzz 40% -floodfill 0x50% grey50
+-fill grey50 -fuzz 35% -floodfill 0x50% grey0
+-fill grey0 -fuzz 30% -floodfill 0x50% grey50
+-fill grey50 -fuzz 25% -floodfill 0x50% grey0
+-fill grey0 -fuzz 15% -floodfill 0x50% grey50
+-blur 0x1.0
+-blur 0x2.0
+-blur 0x3.0
+-blur 1x2.0
+-blur 1x1.0
+-blur 2x2.0
+-unsharp 10x2.0
+-unsharp 0x5.0
+-unsharp 1x1.0
+-unsharp 2x2.0
+-blur 1x1.0 -unsharp 2x2.0
+-blur 1x2.0 -unsharp 2x3.0
+-blur 2x2.0 -threshold 35%
+-blur 3x0.7, -brightness-contrast -75x0
+-contrast-stretch 2%x1%
+-contrast-stretch 0.15x0.05%
+-contrast-stretch 2%x99%
+-contrast-stretch 0x12%
+-contrast-stretch 0x25%
+-contrast-stretch 0x35%
+-contrast-stretch 0x45%
+-contrast-stretch 0x50%
+-contrast-stretch 0x65%
+-contrast-stretch 30x30%
+-contrast-stretch 60x30%
+-contrast-stretch 90x30%
+-despeckle
+-negate
++contrast
+-contrast
+-equalize
+-enhance
+-gamma 0.5
+-gamma 0.7
+-gamma 0.75
+-gamma 0.8
+-gamma 0.9
+-gamma 0.95
+-gamma 0.975
+-gamma 1.025
+-gamma 1.05
+-gamma 1.1
+-gamma 1.25
+-gamma 1.4
+-gamma 1.5
+-gamma 1.6
+-gamma 1.75
+-brightness-contrast -90x0
+-brightness-contrast -80x0
+-brightness-contrast -75x0
+-brightness-contrast -50x0
+-brightness-contrast -40x0
+-brightness-contrast -30x0
+-brightness-contrast -25x0
+-brightness-contrast -15x0
+-brightness-contrast -8x0
+-brightness-contrast -5x0
+-brightness-contrast -3x0
+-brightness-contrast -1x0
+-brightness-contrast +90x0
+-brightness-contrast +80x0
+-brightness-contrast +75x0
+-brightness-contrast +50x0
+-brightness-contrast +40x0
+-brightness-contrast +30x0
+-brightness-contrast +25x0
+-brightness-contrast +15x0
+-brightness-contrast +8x0
+-brightness-contrast +5x0
+-brightness-contrast +3x0
+-brightness-contrast +1x0
+-black-threshold 5%
+-black-threshold 15%
+-black-threshold 25%
+-black-threshold 35%
+-black-threshold 65%
+-black-threshold 85%
+-black-threshold 95%
+-white-threshold 5%
+-white-threshold 15%
+-white-threshold 25%
+-white-threshold 35%
+-white-threshold 65%
+-white-threshold 85%
+-white-threshold 95%
+-threshold 10%
+-threshold 25%
+-threshold 35%
+-threshold 40% 
+-threshold 50% 
+-threshold 55% 
+-threshold 60% 
+-threshold 65%
+-threshold 75%
+-threshold 90%
+-posterize 0 -negate
+-posterize 0
+-posterize 2
+-posterize 3
+-posterize 4
+-posterize 5
+-posterize 6
+-posterize 7
+-posterize 8
+-posterize 10
+-adaptive-blur 0x1.0
+-adaptive-blur 1x1.0
+-adaptive-blur 2x1.0
+-adaptive-blur 5x1.0
+-adaptive-sharpen 0x1.0
+-adaptive-sharpen 1x1.0
+-adaptive-sharpen 2x1.0
+-adaptive-sharpen 5x1.0
+-sharpen 0x1.0
+-sharpen 0x2.0
+-sharpen 0x3.0
+-sharpen 1x5.0
+-sharpen 2x2.0
+-auto-gamma
+-auto-level
+-noise 1x1
+-noise 2x2
+-noise 3x3
+-monochrome
+-colorspace Gray
+-colors 2
+-colors 3
+-colors 4
+-colors 5
+-colors 7
+-colors 10
+-colors 13
+-colors 15
+-colors 20
+-colors 25
+-spread 1
+-spread 2
+-spread 3
