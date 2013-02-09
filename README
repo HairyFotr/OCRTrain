@@ -1,0 +1,16 @@
+-------------
+ OCR Trainer
+-------------
+
+1. Put your images into img/
+2. Put your transcriptions into a text file... "filename transcription"
+3. Run runTrain <yourTextFile>
+4. Wait and wait and wait :)
+
+Things you need:
+  sudo apt-get install imagemagick tesseract-ocr gocr cuneiform ocrad
+
+Things you should probably set (a.k.a. things I should abstract away into files):
+  allowedCharacters / stringFilter
+  the appropriate string scoring algorithm
+  different sequence of param-changing algorithms
