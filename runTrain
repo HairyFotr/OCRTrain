@@ -1,0 +1,11 @@
+mkdir -p bin
+scalac -language:postfixOps -optimise `scalac -Y 2>&1 | grep warn | cut -d' ' -f 3 | tr '\n' ' '` -Xlint -deprecation -feature -unchecked -d bin OCRTrain.scala && { 
+  sudo umount ram 
+  mkdir -p ram
+  sudo mount -t ramfs -o size=50m ramfs ram && sudo chown hairy:hairy ram
+  mkdir ram/img
+  for img in `cat $1 | grep -v '^#' | cut -d' ' -f 1`; do cp img/$img ram/img/$img; done
+  mogrify -resize '640x640>' $2 $3 $4 ram/img/*
+
+  time scala -J-Xss1G -cp bin OCRTrain $1
+}
